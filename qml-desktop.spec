@@ -15,6 +15,7 @@ BuildRequires:	qt5-devel
 BuildRequires:	pkgconfig(Qt5Qml)
 BuildRequires:	pkgconfig(Qt5Quick)
 BuildRequires:	pkgconfig(libpulse)
+BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(gio-2.0)
 
 %description
