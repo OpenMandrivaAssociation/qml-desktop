@@ -11,6 +11,7 @@ URL:		https://github.com/papyros/qml-desktop
 # git clone https://github.com/papyros/qml-desktop.git
 # git archive --format=tar --prefix qml-desktop-0.0.0-$(date +%Y%m%d)/ HEAD | xz -vf > qml-desktop-0.0.0-$(date +%Y%m%d).tar.xz
 Source0:	%{name}-%{version}-%{snap}.tar.xz
+Patch0:		alsa-lib-linkage-fix.patch
 BuildRequires:	qt5-devel
 BuildRequires:	pkgconfig(Qt5Qml)
 BuildRequires:	pkgconfig(Qt5Quick)
@@ -23,6 +24,7 @@ A C++ plugin for QML to access desktop features
 
 %prep
 %setup -qn %{name}-%{version}-%{snap}
+%apply_patches
 
 %build
 %qmake_qt5
@@ -33,4 +35,3 @@ A C++ plugin for QML to access desktop features
 
 %files
 %{_qt5_libdir}/qt5/qml/Material/*
-%{_qt5_libdir}/qt5/tests/tst_extras/tst_extras

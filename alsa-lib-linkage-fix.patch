@@ -1,0 +1,13 @@
+diff --git a/qml-desktop.pro b/qml-desktop.pro
+index d34e968..977df27 100644
+--- a/qml-desktop.pro
++++ b/qml-desktop.pro
+@@ -8,7 +8,7 @@ TARGET = $$qtLibraryTarget($$TARGET)
+ uri = Material.Desktop
+ 
+ INCLUDEPATH = src /usr/include/glib-2.0 /usr/lib/glib-2.0/include/
+-LIBS += -lpulse -lpulse-mainloop-glib
++LIBS += -lpulse -lpulse-mainloop-glib -lasound
+ 
+ # Input
+ SOURCES += \
