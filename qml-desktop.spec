@@ -1,10 +1,10 @@
 %define debug_package %nil
-%define snap	20150325
+%define snap	20150408
 
 Summary:	QML Desktop
 Name:		qml-desktop
 Version:	0.0.0
-Release:	0.%{snap}.1
+Release:	1.%{snap}.1
 License:	GPLv2
 Group:		Graphical desktop/Other
 URL:		https://github.com/papyros/qml-desktop
