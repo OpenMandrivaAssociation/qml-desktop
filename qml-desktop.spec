@@ -24,7 +24,7 @@ A C++ plugin for QML to access desktop features.
 
 %prep
 %setup -qn %{name}-%{version}-%{snap}
-%apply_patches
+%autopatch -p1
 
 %build
 %qmake_qt5
